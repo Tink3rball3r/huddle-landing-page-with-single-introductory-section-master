@@ -1,0 +1,105 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	background-color: var(--bg-clr);
+	background-image: url(/images/bg-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.container {
+	margin-top: 9.8rem;
+	width: 90vw;
+}
+
+.header {
+	margin-bottom: 14.5rem;
+
+	&_logo {
+		width: 32rem;
+	}
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+
+	&_image > img {
+		width: 115rem;
+	}
+}
+
+.main_text {
+	align-self: flex-start;
+	color: var(--font-clr);
+	// margin-right: 20rem;
+	// margin-left: 12rem;
+	padding: 0 20rem 0 12rem;
+	margin-top: 8rem;
+
+	.main_text_heading {
+		font-size: 6rem;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		margin-bottom: 5rem;
+	}
+
+	.main_text_paragraph {
+		font-size: 2.9rem;
+		line-height: 1.5;
+		margin-bottom: 5rem;
+	}
+
+	.main_text_cta {
+		font-size: 2.8rem;
+		color: var(--bg-clr);
+		background-color: var(--font-clr);
+		border-radius: 5rem;
+		padding: 2rem 9rem 2.3rem 9rem;
+		cursor: pointer;
+		outline: none;
+		box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+			0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+	}
+
+	.main_text_cta:active {
+		background-color: var(--active-clr);
+		color: var(--font-clr);
+	}
+}
+
+.social {
+	/* maybe wrap these icons in divs and figure out a way to center them */
+	width: 84vw;
+	// font-size: rem;
+	display: flex;
+	justify-content: flex-end;
+
+	.social_container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 6rem;
+		width: 6rem;
+		font-size: 3rem;
+		background-color: var(--bg-clr);
+		border: 1px solid var(--font-clr);
+		border-radius: 50%;
+		margin: 2rem;
+		cursor: pointer;
+	}
+
+	i {
+		color: var(--font-clr);
+	}
+
+	.social_container:active,
+	i:active {
+		border-color: var(--active-clr);
+		color: var(--active-clr);
+	}
+}

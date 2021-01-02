@@ -1,0 +1,211 @@
+:root {
+  --bg-clr: hsl(257, 40%, 49%);
+  --active-clr: hsl(300, 69%, 71%);
+  --font-clr: hsl(0, 0%, 100%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--bg-clr);
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  margin-top: 9.8rem;
+  width: 90vw;
+}
+
+.header {
+  margin-bottom: 14.5rem;
+}
+
+.header_logo {
+  width: 32rem;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.main_image > img {
+  width: 115rem;
+}
+
+.main_text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: var(--font-clr);
+  padding: 0 20rem 0 12rem;
+  margin-top: 8rem;
+}
+
+.main_text .main_text_heading {
+  font-size: 6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.main_text .main_text_paragraph {
+  font-size: 2.9rem;
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+
+.main_text .main_text_cta {
+  font-size: 2.8rem;
+  color: var(--bg-clr);
+  background-color: var(--font-clr);
+  border-radius: 5rem;
+  padding: 2rem 9rem 2.3rem 9rem;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.main_text .main_text_cta:active {
+  background-color: var(--active-clr);
+  color: var(--font-clr);
+}
+
+.social {
+  /* maybe wrap these icons in divs and figure out a way to center them */
+  width: 84vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social .social_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  width: 6rem;
+  font-size: 3rem;
+  background-color: var(--bg-clr);
+  border: 1px solid var(--font-clr);
+  border-radius: 50%;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.social i {
+  color: var(--font-clr);
+}
+
+.social .social_container:active,
+.social i:active {
+  border-color: var(--active-clr);
+  color: var(--active-clr);
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container {
+    margin-top: 1.8rem;
+    width: 100vw;
+  }
+  .header {
+    margin-bottom: 6.5rem;
+  }
+  .header_logo {
+    width: 15rem;
+    margin-left: 3rem;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_image > img {
+    width: 35rem;
+  }
+  .main_text {
+    padding: 0 1.8rem;
+    margin-top: 4rem;
+  }
+  .main_text .main_text_heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .main_text .main_text_paragraph {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .main_text .main_text_cta {
+    font-size: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 8rem 1.3rem 8rem;
+  }
+  .social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social .social_container {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
+    margin: 1.2rem;
+  }
+  .social i {
+    color: var(--font-clr);
+  }
+}
+/*# sourceMappingURL=style.css.map */
