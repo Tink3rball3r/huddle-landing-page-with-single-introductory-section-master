@@ -143,7 +143,7 @@ body {
   color: var(--active-clr);
 }
 
-@media (min-width: 375px) and (max-width: 1440px) {
+@media (min-width: 375px) {
   body {
     background-image: url(/images/bg-mobile.svg);
     background-repeat: no-repeat;
