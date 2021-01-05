@@ -6,48 +6,60 @@
 	}
 
 	.container {
-		margin-top: 1.8rem;
 		width: 100vw;
 	}
 
 	.header {
-		margin-bottom: 6.5rem;
+		margin-top: 30px;
+		margin-bottom: 48px;
 
 		&_logo {
-			width: 15rem;
-			margin-left: 3rem;
+			width: 45%;
 		}
 	}
 
 	.main {
 		flex-direction: column;
 
+		&_image {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
 		&_image > img {
-			width: 35rem;
+			display: block;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
 	.main_text {
-		padding: 0 1.8rem;
-		margin-top: 4rem;
+		// padding: 0 1px;
+		margin-top: 4px;
+		width: 100%;
+		padding: 3px;
 
 		.main_text_heading {
-			font-size: 2.5rem;
+			font-size: 25px;
 			text-align: center;
-			margin-bottom: 3rem;
+			margin-bottom: 3px;
 		}
 
 		.main_text_paragraph {
-			font-size: 2rem;
+			width: 100%;
+			font-size: 18px;
 			text-align: center;
+			padding: 0 15px;
+			margin-bottom: 15px;
 		}
 
 		.main_text_cta {
-			font-size: 2rem;
+			font-size: 20px;
 			display: block;
+			padding: 10px 70px;
 			margin-left: auto;
 			margin-right: auto;
-			padding: 1rem 8rem 1.3rem 8rem;
 		}
 	}
 
@@ -57,10 +69,10 @@
 		justify-content: center;
 
 		.social_container {
-			height: 3.5rem;
-			width: 3.5rem;
-			font-size: 1.5rem;
-			margin: 1.2rem;
+			height: 40px;
+			width: 40px;
+			font-size: 15px;
+			margin: 80px 10px;
 		}
 
 		i {
