@@ -1,6 +1,6 @@
 body {
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	background-color: var(--bg-clr);
@@ -10,15 +10,16 @@ body {
 }
 
 .container {
-	margin-top: 9.8rem;
 	width: 90vw;
+	height: 100vh;
 }
 
 .header {
-	margin-bottom: 5.5rem;
+	margin-bottom: 7.2%;
 
 	&_logo {
-		width: 30rem;
+		margin-top: 60px;
+		width: 15%;
 	}
 }
 
@@ -26,40 +27,46 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.5px;
+
+	&_image {
+		width: 49%;
+	}
 
 	&_image > img {
-		width: 85rem;
+		width: 100%;
+		margin-left: 10px;
 	}
 }
 
 .main_text {
+	width: 50%;
 	align-self: flex-start;
 	color: var(--font-clr);
-	// margin-right: 20rem;
-	// margin-left: 12rem;
-	padding: 0 20rem 0 12rem;
-	margin-top: 8rem;
+	margin-top: 3%;
+	padding-left: 60px;
 
 	.main_text_heading {
-		font-size: 4rem;
+		font-size: 55px;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
-		margin-bottom: 5rem;
+		margin-bottom: 50px;
 	}
 
 	.main_text_paragraph {
-		font-size: 1.9rem;
+		width: 90%;
+		font-size: 25px;
 		line-height: 1.5;
+		padding-right: 200px;
 		margin-bottom: 5rem;
 	}
 
 	.main_text_cta {
-		font-size: 1.8rem;
+		font-size: 25px;
 		color: var(--bg-clr);
 		background-color: var(--font-clr);
-		border-radius: 5rem;
-		padding: 1rem 9rem 1.3rem 9rem;
+		border-radius: 50px;
+		padding: 20px 100px;
 		cursor: pointer;
 		outline: none;
 		box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -74,7 +81,7 @@ body {
 
 .social {
 	/* maybe wrap these icons in divs and figure out a way to center them */
-	width: 84vw;
+	width: 90vw;
 	// font-size: rem;
 	display: flex;
 	justify-content: flex-end;
@@ -83,13 +90,13 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 6rem;
-		width: 6rem;
-		font-size: 3rem;
+		height: 60px;
+		width: 60px;
+		font-size: 30px;
 		background-color: var(--bg-clr);
 		border: 1px solid var(--font-clr);
 		border-radius: 50%;
-		margin: 2rem;
+		margin: 40px 16px 0 16px;
 		cursor: pointer;
 	}
 
