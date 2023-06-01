@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+	--violet: hsl(257, 40%, 49%);
+	--magenta: hsl(300, 69%, 71%);
+	--white: hsl(0, 0%, 100%);
+	--font-color: hsl(0, 0%, 100%);
+}
+/* font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;*/
+
+/* resets */
+
+html {
+	font-size: 62.5%;
+	color: var(--font-color);
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/* helpers */
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* mobile styles */
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--violet);
+	background-image: url(/images/bg-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+header {
+	padding: 3rem 0 5rem 2.5rem;
+}
+
+.logo {
+	width: 40%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 7rem;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.main-image {
+	max-width: 88%;
+	padding: 1rem 0 0 0;
+	margin: 0 auto;
+}
+
+.main-content {
+	order: 1;
+}
+
+.main-content h1 {
+	font-size: 2.5rem;
+	padding: 0 0 1rem 0;
+}
+
+.main-content p,
+.main-content h1 {
+	text-align: center;
+}
+
+.main-content p {
+	font-size: 1.8rem;
+	line-height: 1.6;
+	padding: 0 0 2.5rem 0;
+}
+
+.cta {
+	font-size: 1.8rem;
+	text-align: center;
+	color: var(--violet);
+	width: 60%;
+	padding: 1rem 0;
+	margin: 0 auto;
+	border-radius: 2rem;
+	background-color: var(--white);
+}
+
+svg {
+	width: 3rem;
+	height: 3rem;
+	border: 0.2rem solid white;
+	padding: 0.5rem;
+	border-radius: 50%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	padding: 6rem 0 0 0;
+}
