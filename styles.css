@@ -65,6 +65,11 @@ body {
 	background-size: 100%;
 }
 
+.container {
+	height: 100%;
+	width: 100%;
+}
+
 header {
 	padding: 3rem 0 5rem 2.5rem;
 }
@@ -88,7 +93,7 @@ main {
 	-ms-flex-align: center;
 	align-items: center;
 	gap: 7rem;
-	max-width: 90%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -150,5 +155,92 @@ footer {
 	-ms-flex-pack: center;
 	justify-content: center;
 	gap: 1.5rem;
-	padding: 6rem 0 0 0;
+	padding: 3rem 0 0 0;
+}
+
+@media only screen and (min-width: 800px) {
+	body {
+		background-image: url(/images/bg-desktop.svg);
+		background-size: contain;
+	}
+
+	.logo {
+		width: 12%;
+		padding: 0 0 0 2rem;
+	}
+
+	main {
+		padding: 5rem 0 0 0;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		gap: 5rem;
+	}
+
+	.main-image {
+		width: 50%;
+		justify-items: start;
+		margin: 0;
+	}
+
+	.main-image img {
+		width: 100%;
+		/* margin: 0 10rem 0 0; */
+	}
+
+	.main-content {
+		width: 50%;
+		-ms-flex-item-align: start;
+		align-self: flex-start;
+		padding: 5rem 1rem 0 0rem;
+	}
+
+	.main-content p,
+	.main-content h1 {
+		text-align: left;
+	}
+
+	.main-content h1 {
+		font-size: 5rem;
+		padding: 0 3rem 0 0;
+	}
+
+	.main-content p {
+		width: 80%;
+		padding: 0 2rem 2rem 0;
+	}
+
+	.cta {
+		margin: 0;
+		width: 25%;
+	}
+
+	.cta:hover {
+		background-color: var(--magenta);
+		color: var(--white);
+		-webkit-transition: background-color 300ms;
+		-o-transition: background-color 300ms;
+		transition: background-color 300ms;
+	}
+
+	footer {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		padding: 0rem 6rem 0 0;
+	}
+
+	svg {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	svg:hover path,
+	svg:hover {
+		fill: var(--magenta);
+		border-color: var(--magenta);
+	}
 }
